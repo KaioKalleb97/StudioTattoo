@@ -1,0 +1,682 @@
+body{
+	font-family: Helvetica, Arial, sans-serif;
+	background: black;
+}
+
+/*------------BARRA DE NAVEGAÇÃO-------*/
+nav{
+	height: 5em;
+}
+
+.bg-black{
+	margin: 3px 3px 0 0;
+	padding: -10px;
+	background: #000;
+	border: 1px solid rgba(181,181,181, 0.9);
+	border-radius: 10px;
+	
+}
+
+.nav-gold{
+	background: linear-gradient(to bottom, #D0AD00, #000);
+}
+
+.shadow-icon{
+	box-shadow: 0 0 7px rgba(218,165,32, 0.9);
+	border-radius: 50%;
+}
+
+.dropdown-item {
+    color: rgba(181,181,181, 0.9);
+}
+
+.dropdown-item:hover {
+	background: rgba(181,181,181, 0.9);
+    color: rgba(0,0,0, 0.9);
+}
+
+.dropdown-divider{
+	background:  rgba(181,181,181, 0.9);
+}
+
+.offcanvas.offcanvas-end {
+    top: 0;
+    right: 0px;
+    width: 60%;
+    border: 1px solid rgba(181,181,181, 0.9);
+	border-radius: 10px;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid rgba(181,181,181, 0.9);
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+
+.icon-home:hover{
+	box-shadow: 0 0 7px rgba(225,225,225, 0.9);
+	border-radius: 50%;
+}
+
+.icon-zoom {
+    transition: transform 0.4s;
+}
+
+.icon-zoom:hover {
+    transform: scale(0.9);
+    border: 1px solid #86751d;
+}
+
+.mt-10{
+	margin-top: 80px;
+}
+
+-@keyframes rotate{
+	from{
+		transform: rotate(0deg);
+	}
+
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+
+/*-------------CAPA----------------*/
+#home {
+	width: 90%;
+	height: 450px;
+	margin: 90px auto;
+	overflow-x: hidden;
+	background:	url(../img/mulher-dourada.jpeg) no-repeat top center;
+	background-size: 90% 90%;
+	opacity: 80%;
+}
+
+.nav-direita{
+	margin-left: auto;
+}
+/*-------MEDIA QUERIES------*/
+
+/*  small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	
+	/*-----------INDEX----------*/
+	h2{
+		font-size: 1.1em;
+		text-align: center;
+	}
+	.shadow-icon-nav{
+	color: rgba(181,181,181, 0.9);
+	text-shadow: 0 0 2px rgba(218,165,32, 0.9);
+	}
+
+	.link-nav:hover{
+	border: 1px solid rgba(0, 0, 0, 0.0);
+	padding-bottom: 5px;
+	color: #000;
+	text-shadow: 0 0 7px rgba(218,165,32, 0.9);
+	}
+
+	.link-nav:active{
+	padding: 1px;
+	color: #000;
+	text-shadow: 0 0 7px rgba(218,165,32, 0.9);
+	}
+
+	header, nav, span{
+	color: white;
+}
+
+	/*-----------CONTATOS----------*/
+	section .divisor{
+		border-bottom: 1px solid rgba(218,165,32, 0.7);
+		margin-bottom: 10px;
+	}
+
+	section .img-tam{
+		width: 25%;
+		height: auto;
+		margin: 0 0 10px 0;
+		padding: 0;
+	}
+
+	/*-----------TODOS OS RODAPES----------*/
+	footer .border-rdp{
+		border-left: none;
+		border-right: none;
+		border top: 1px solid gray;
+		border-bottom: 1px solid #171717;
+	}
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+	
+	/*-----------INDEX----------*/
+	h2{
+		font-size: 1.2em;
+		text-align: center;
+	}
+
+	.shadow-icon-nav{
+	color: rgba(181,181,181, 0.9);
+	text-shadow: 0 0 2px rgba(218,165,32, 0.9);
+	}
+
+	.link-nav:hover{
+	border: 1px solid rgba(0, 0, 0, 0.0);
+	padding-bottom: 5px;
+	color: #000;
+	text-shadow: 0 0 7px rgba(218,165,32, 0.9);
+	}
+
+	.link-nav:active{
+	padding: 1px;
+	color: #000;
+	text-shadow: 0 0 7px rgba(218,165,32, 0.9);
+	}
+
+	/*-----------CONTATOS----------*/
+	section .divisor{
+		border-bottom: 1px solid rgba(218,165,32, 0.7);
+		margin-bottom: 10px;
+	}
+
+	section .img-tam{
+		width: 26%;
+		height: auto;
+		margin: 10px 0 10px 0;
+		padding: 0;
+	}
+
+	/*-----------TODOS OS RODAPES----------*/
+	footer .border-rdp{
+		border-bottom: 1px solid #171717;
+	}
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+	
+	/*-----------INDEX----------*/
+	h2{
+		font-size: 1.8em;
+		margin-top: -7px;
+	}
+
+	nav, span{
+		font-size: 0.9em;
+	}
+
+	.shadow-icon-nav{
+	color: #000;
+	text-shadow: 0 0 7px rgba(218,165,32, 0.9);
+	}
+
+	.link-nav:hover{
+	border: 1px solid rgba(0, 0, 0, 0.0);
+	padding-bottom: 5px;
+	color: #000;
+	text-shadow: 0 0 7px rgba(218,165,32, 0.9);
+	}
+
+	.link-nav:active{
+	padding: 1px;
+	color: #000;
+	text-shadow: 0 0 7px rgba(218,165,32, 0.9);
+	}
+
+	.margin-left{
+		margin-left: 15px;
+	}
+	
+	.font-carousel h3, p{
+		font-size: 0.9em;
+	}
+
+	.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid rgba(0,0,0, 0.9);
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+	}
+	/*-----------CONTATOS----------*/
+	section .divisor{
+		border-right: 1px solid rgba(218,165,32, 0.7);
+	}
+
+	section .img-tam{
+		width: 45%;
+		height: auto;
+		margin: 0;
+		padding: 0;
+	}
+
+	section .h1{
+		margin-top: 10px;
+		font-size: 1.5em;
+	}
+	/*-----------TODOS OS RODAPES----------*/
+	footer .border-rdp{
+		border-right: 1px solid #171717;
+	}
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+	
+	/*-----------INDEX----------*/
+	h2{
+		font-size: 1.8em;
+		margin-top: -7px;
+	}
+	p{
+		font-size: 0.9em;
+	}
+
+	.shadow-icon-nav{
+	color: #000;
+	text-shadow: 0 0 7px rgba(218,165,32, 0.9);
+	}
+
+	.link-nav:hover{
+	border: 1px solid rgba(0, 0, 0, 0.0);
+	padding-bottom: 5px;
+	color: #000;
+	text-shadow: 0 0 7px rgba(218,165,32, 0.9);
+	}
+
+	.link-nav:active{
+	padding: 1px;
+	color: #000;
+	text-shadow: 0 0 7px rgba(218,165,32, 0.9);
+	}
+
+	.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid rgba(0,0,0, 0.9);
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+	}
+
+	/*-----------CONTATOS----------*/
+	section .divisor{
+		border-right: 1px solid rgba(218,165,32, 0.7);
+	}
+
+	section .img-tam{
+		width: 45%;
+		height: auto;
+		margin: 0 0 10px 0;
+		padding: 0;
+	}
+
+	section .h1{
+		margin-top: 10px;
+		font-size: 2em;
+	}
+
+	/*-----------TODOS OS RODAPES----------*/
+	footer .border-rdp{
+		border-right: 1px solid #171717;
+	}
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	
+	/*-----------INDEX----------*/
+	p{
+		margin-top: 1em;
+	}
+
+	.img-size{
+		width: 500px;
+    	height: 484px;
+	}
+
+	.shadow-icon-nav{
+	color: #000;
+	text-shadow: 0 0 7px rgba(218,165,32, 0.9);
+	}
+
+	.link-nav:hover{
+	border: 1px solid rgba(0, 0, 0, 0.0);
+	padding-bottom: 5px;
+	color: #000;
+	text-shadow: 0 0 7px rgba(218,165,32, 0.9);
+	}
+
+	.link-nav:active{
+	padding: 1px;
+	color: #000;
+	text-shadow: 0 0 7px rgba(218,165,32, 0.9);
+	}
+
+	.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid rgba(0,0,0, 0.9);
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+	}
+
+	/*-----------CONTATOS----------*/
+	section .divisor{
+		border-right: 1px solid rgba(218,165,32, 0.7);
+	}
+
+	section .img-tam{
+		width: 35%;
+		height: auto;
+		margin: 10px 0 10px 0;
+		padding: 0;
+	}
+
+	section .h1{
+		margin-top: 10px;
+		font-size: 2em;
+	}
+
+	/*-----------TODOS OS RODAPES----------*/
+	footer .border-rdp{
+		border-right: 1px solid #171717;
+	}
+
+}
+
+
+@keyframes animacao-caixa{
+		0% {
+	    transform: rotateY(0deg) translateZ(0);
+  		}
+  		50% {
+	    transform: rotateY(180deg) translateZ(150px);
+	  	}
+  		100% {
+	    transform: rotateY(360deg) translateZ(0);
+	  	}
+
+	from{
+		background: url("../img/tattoo.png") center no-repeat;
+		background-size: 300px;
+		border: 2px solid #B8860B;
+		border-radius: 300px;
+		top: 0;
+		left: 0;
+	}
+
+
+	to{
+		background: url("../img/toni-perfil.png") center no-repeat;
+		background-size: 290px;
+		border: 2px solid #B8860B;
+		border-radius: 300px;
+		top: 200px;
+		left: 200px;
+	}
+}
+
+#caixa {
+  width: 280px;
+  height: 280px;
+  background: url("../img/tattoo.png") center no-repeat;
+  background-size: 300px;
+  margin: 50px auto;
+  border: 2px solid #B8860B;
+  border-radius: 300px;
+  animation-name: animacao-caixa;
+  animation-duration: 5s;
+  animation-delay: 7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+
+/*---------SECTION CAROUSEL E TEXTOS --------*/
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-fade .carousel-item.active {
+    opacity: 1;   
+	transition: opacity 1s ease-in-out;
+}
+.bg-carousel{
+	padding-top: 30px;
+	background: linear-gradient(to bottom, #000, #121212);
+}
+.h2-custom h2{
+	color: #fff;
+	padding: 10px;
+}
+.h2-custom p{
+	color: #fff;
+	padding: 10px;
+}
+
+/*------------- SECTION TATTOO  ---------------*/
+
+.border-img{
+	border: 2px solid #3c3c3c;
+	box-shadow: 0 0 10px rgba(218,165,32, 0.9);
+}
+
+.bg-tatuagem{
+	background: linear-gradient(to bottom, #000, #121212);
+}
+
+/*---------SECTION CARDS-----*/
+.bg-cards{
+	padding: 60px 0 70px 0 ;
+	background: linear-gradient(to top, #000, #121212);
+}
+
+.shadow-gold{
+	text-decoration: underline;
+	text-transform: uppercase;
+	color: #000;
+	text-shadow: 1px -2px 2.5px rgba(218,165,32, 0.9);
+}
+
+.shadow-white{
+	color: #fff;
+	text-shadow: 0px 0px 20px rgba(255,250,250, 0.5);
+}
+
+.btn-custom{
+	border: 1px solid rgba(218,165,32, 0.3);
+	background: none;
+	color: rgba(218,165,32, 0.3);
+}
+
+.btn-custom:hover{
+	border: 1px solid rgba(218,165,32, 0.7);
+	background: none;
+	color: rgba(218,165,32, 0.7);
+	text-shadow: 0px 0px 5px rgba(218,165,32, 0.8);
+}
+
+.card-tattoo:hover{
+	background: url(../img/cuidados-tattoo.jpg) no-repeat center;
+	background-size: 100%;
+	border: 1px solid rgba(218,165,32, 0.3);
+	width: 99.9%;
+	cursor: pointer;
+}
+
+.card-pos-tattoo:hover{
+	background: url(../img/pos-tattoo.png) no-repeat center;
+	background-size: 100%;
+	border: 1px solid rgba(218,165,32, 0.3);
+	width: 99.9%;
+	cursor: pointer;
+}
+
+/* ANIMAÇÃO DE TOQUE AO CARD QUANDO CLICAR */
+.card:hover {
+    transform: scale(0.98); /* Reduz o tamanho do card quando clicado */
+    transition: transform 0.2s ease; /* Adiciona uma transição suave */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+}
+
+.card:active, .card:focus {
+	transform: scale(1.0); /* deixei o tamanho do card padrão quando clicado */
+    transition: transform 0.1s ease; /* Adiciona uma transição suave */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+}
+
+
+/*-----RODAPE------*/
+footer{
+	background: linear-gradient(to bottom, #3c3c3c, #000);
+}
+
+footer ul li{
+	margin-bottom: 10px;
+}
+
+
+
+
+
+/*---------------CUIDADOS-TATTOO.HTML---------------*/
+
+#bg-tattoo{
+	background: #121212 url("../img/maquina.png") center;
+}
+
+.lista-cuidados{
+	background: rgba(0, 0, 0, 0.3);
+	border: 1px solid rgba(218,165,32, 0.7);
+	padding: 15px 7px 15px 7px;
+	border-radius: 15px;
+}
+
+.h2{
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-align: center;
+	text-shadow: 0 0 10px #FFF8DC;
+	margin: 20px 0 30px 0;
+}
+.lista-cuidados h4{
+	text-decoration: underline;
+	padding: 0 0 0 5px;
+}
+
+.lista-cuidados p{
+	color: #DCDCDC;
+	margin: 10px 0 30px 0;
+	padding: 0 0 0 10px;
+}
+
+
+/*---------------TATTOO´S---------------*/
+#nav-tattoo{
+	margin-bottom: 6em;
+}
+
+.galeria{
+	border: 0.1px solid rgba(0,0,0, 0.7);
+	border-radius: 7px;
+	margin: 15px 2.5px 15px 2.5px;
+	padding: 0;
+}
+
+.img-zoom {
+    transition: transform 0.4s;
+    border: 0.1px solid rgba(0,0,0, 0.7);
+}
+
+.img-zoom:hover {
+    transform: scale(1.1);
+    border: 1px solid #86751d;
+}
+
+.page-link{
+    position: relative;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    background: none;
+    border: 1px solid #fff;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.active>.page-link, .page-link.active {
+    z-index: 3;
+    color: #fff;
+    background: #2b2b2b;
+    border-color: #fff;
+}
+
+.pagination {
+    --bs-pagination-hover-color: black;
+    --bs-pagination-disabled-color: #242423;
+    --bs-pagination-disabled-bg: #636362;
+    --bs-pagination-disabled-border-color: #dee2e6;
+    --bs-pagination-active-color: #fff;
+    --bs-pagination-active-bg: #292929;
+    --bs-pagination-active-border-color: #292929;
+    --bs-pagination-focus-color: #292929;
+    --bs-pagination-color: #292929;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+}
+
+
+/*---------CONTATO----------*/
+
+#bg-contato{
+	background: #121212 url("../img/fundo-mao.png") center;
+	background-size: 40%;
+}
+
+
+.contatos{
+	background: rgba(84, 84, 82, 0.3);
+	border: 1px solid rgba(218,165,32, 0.7);
+	padding: 15px 7px 15px 7px;
+	border-radius: 15px;
+	text-align: center;
+}
+
+/*---------QUEM SOMOS----------*/
+#bg-quem-somos{
+	background: #121212 url("../img/fundo-mao.png") center;
+	background-size: 40%;
+}
+
+.sobre{
+	background: rgba(84, 84, 82, 0.3);
+	border: 1px solid rgba(218,165,32, 0.7);
+	padding: 15px 7px 15px 7px;
+	border-radius: 15px;
+	text-align: start;
+}
